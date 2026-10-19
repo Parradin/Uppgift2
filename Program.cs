@@ -11,7 +11,16 @@ class Program
             PostalCode = "302 40"
 
         };
+        Student student = new Student
+        {
+            Address = address,
+            FirstName = "Steffan",
+            LastName = "Parra",
+            Email = "steffan.parra@gmail.com",
+            PhoneNr = "0762855129"
+        };
         Console.WriteLine(address.City);
+        Console.WriteLine(student);
 
 
 
