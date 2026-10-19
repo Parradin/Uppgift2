@@ -1,0 +1,15 @@
+C:\users\steff\Desktop\Plugg\Uppgift2\Client\bin\Debug\net10.0\Client.exe
+C:\users\steff\Desktop\Plugg\Uppgift2\Client\bin\Debug\net10.0\Client.deps.json
+C:\users\steff\Desktop\Plugg\Uppgift2\Client\bin\Debug\net10.0\Client.runtimeconfig.json
+C:\users\steff\Desktop\Plugg\Uppgift2\Client\bin\Debug\net10.0\Client.dll
+C:\users\steff\Desktop\Plugg\Uppgift2\Client\bin\Debug\net10.0\Client.pdb
+C:\users\steff\Desktop\Plugg\Uppgift2\Client\obj\Debug\net10.0\Client.GeneratedMSBuildEditorConfig.editorconfig
+C:\users\steff\Desktop\Plugg\Uppgift2\Client\obj\Debug\net10.0\Client.AssemblyInfoInputs.cache
+C:\users\steff\Desktop\Plugg\Uppgift2\Client\obj\Debug\net10.0\Client.AssemblyInfo.cs
+C:\users\steff\Desktop\Plugg\Uppgift2\Client\obj\Debug\net10.0\Client.csproj.CoreCompileInputs.cache
+C:\users\steff\Desktop\Plugg\Uppgift2\Client\obj\Debug\net10.0\Client.sourcelink.json
+C:\users\steff\Desktop\Plugg\Uppgift2\Client\obj\Debug\net10.0\Client.dll
+C:\users\steff\Desktop\Plugg\Uppgift2\Client\obj\Debug\net10.0\refint\Client.dll
+C:\users\steff\Desktop\Plugg\Uppgift2\Client\obj\Debug\net10.0\Client.pdb
+C:\users\steff\Desktop\Plugg\Uppgift2\Client\obj\Debug\net10.0\Client.genruntimeconfig.cache
+C:\users\steff\Desktop\Plugg\Uppgift2\Client\obj\Debug\net10.0\ref\Client.dll
