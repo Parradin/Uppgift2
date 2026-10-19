@@ -1,6 +1,6 @@
 ﻿namespace Client;
 
-public class Students
+public class Student
 {
 
 }
