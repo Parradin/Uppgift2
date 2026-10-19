@@ -11,7 +11,7 @@ class Program
             PostalCode = "302 40"
 
         };
-        Console.WriteLine(address);
+        Console.WriteLine(address.City);
 
 
 
