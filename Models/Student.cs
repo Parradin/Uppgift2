@@ -1,6 +1,6 @@
 ﻿namespace Client.Models;
 
-public class Student
+public class Student : Person
 {
 
 }
