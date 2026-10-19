@@ -6,7 +6,7 @@ class Program
     {
         Address address = new Address
         {
-            StreetAddress = "storgate 1",
+            StreetAddress = "storgatan 1",
             City = "Halmstad",
             PostalCode = "302 40"
 
@@ -19,7 +19,6 @@ class Program
             Email = "steffan.parra@gmail.com",
             PhoneNr = "0762855129"
         };
-        Console.WriteLine(address.City);
         Console.WriteLine(student);
 
 
