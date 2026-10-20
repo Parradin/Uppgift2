@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\users\\steff\\Desktop\\Plugg\\Uppgift2\\Client\\Client.csproj": {}
+    "C:\\users\\steff\\Desktop\\Plugg\\Uppgift2\\client\\Client.csproj": {}
   },
   "projects": {
-    "C:\\users\\steff\\Desktop\\Plugg\\Uppgift2\\Client\\Client.csproj": {
+    "C:\\users\\steff\\Desktop\\Plugg\\Uppgift2\\client\\Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\users\\steff\\Desktop\\Plugg\\Uppgift2\\Client\\Client.csproj",
+        "projectUniqueName": "C:\\users\\steff\\Desktop\\Plugg\\Uppgift2\\client\\Client.csproj",
         "projectName": "Client",
-        "projectPath": "C:\\users\\steff\\Desktop\\Plugg\\Uppgift2\\Client\\Client.csproj",
+        "projectPath": "C:\\users\\steff\\Desktop\\Plugg\\Uppgift2\\client\\Client.csproj",
         "packagesPath": "C:\\Users\\steff\\.nuget\\packages\\",
-        "outputPath": "C:\\users\\steff\\Desktop\\Plugg\\Uppgift2\\Client\\obj\\",
+        "outputPath": "C:\\users\\steff\\Desktop\\Plugg\\Uppgift2\\client\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\steff\\AppData\\Roaming\\NuGet\\NuGet.Config"

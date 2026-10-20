@@ -9,7 +9,20 @@ public class Teachers : Person
 
     public override string ToString()
     {
-        return $"Förnamn: {FirstName} Efternamn: {LastName} Email: {Email} TelefonNr: {PhoneNr} Adress: {Address.StreetAddress} Stad: {Address.City} PostNr: {Address.PostalCode} Kunskapsområden: {KnowledgeArea}";
+        string CourseTitles = "";
+        int count = 0;
+
+        foreach (Course course in Courses)
+        {
+            if (count > 0)
+            {
+                CourseTitles += ", ";
+            }
+
+            CourseTitles += course.CourseTitel;
+            count++;
+        }
+        return $"Förnamn: {FirstName} Efternamn: {LastName} Email: {Email} TelefonNr: {PhoneNr} Adress: {Address.StreetAddress} Stad: {Address.City} PostNr: {Address.PostalCode} Kunskapsområden: {KnowledgeArea} Ansvariga kurser: {CourseTitles}";
     }
 
 }
