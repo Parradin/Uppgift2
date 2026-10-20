@@ -11,6 +11,7 @@ class Program
             PostalCode = "302 40"
 
         };
+
         Student student = new Student
         {
             Address = address,
@@ -20,6 +21,7 @@ class Program
             Email = "steffan.parra@gmail.com",
             PhoneNr = "0762855129"
         };
+
         Teacher teacher = new Teacher
         {
             Address = address,
@@ -30,6 +32,7 @@ class Program
             PhoneNr = "0762548628",
             KnowledgeArea = "Programmering A"
         };
+
         EducationLeader educationLeader = new EducationLeader
         {
             PersonalId = "19700830-4215",
@@ -41,6 +44,7 @@ class Program
             KnowledgeArea = "IT",
             DateOfHire = new DateTime(2024, 8, 1)
         };
+
         Administrator administrator = new Administrator
         {
             PersonalId = "19880830-1245",
@@ -52,6 +56,7 @@ class Program
             KnowledgeArea = "Admin",
             DateOfHire = new DateTime(2025, 6, 24)
         };
+
         Course course = new Course
         {
             CourseNr = "C001",
@@ -60,6 +65,7 @@ class Program
             EndDate = new DateTime(2027, 05, 20),
             IsDistance = false
         };
+
         Course course1 = new Course
         {
             CourseNr = "D002",
@@ -68,6 +74,9 @@ class Program
             EndDate = new DateTime(2027, 05, 20),
             IsDistance = false
         };
+        teacher.Courses.Add(course);
+        teacher.Courses.Add(course1);
+
         //skapar en lista på alla kurserna
         List<Course> courses = [];
         AddCourse(courses, course);
@@ -90,10 +99,6 @@ class Program
         AddTeacher(teachers, teacher);
         ListTeachers(teachers);
 
-
-        teacher.Courses.Add(course);
-        teacher.Courses.Add(course1);
-
         Console.WriteLine($"Antal kurser: {teacher.Courses.Count}");
     }
 
@@ -107,7 +112,22 @@ class Program
 
     static void AddCourse(List<Course> courses, Course course)
     {
-        courses.Add(course);
+        foreach (Course existingCourse in courses)
+        {
+            if (existingCourse.CourseNr == course.CourseNr)
+            {
+                Console.WriteLine("Kursnummret finns redan!");
+                return;
+            }
+        }
+        if (course.IsCourseDateValid())
+        {
+            courses.Add(course);
+        }
+        else
+        {
+            Console.WriteLine("Tyvärr");
+        }
     }
 
     static void AddStudents(List<Student> students, Student student)

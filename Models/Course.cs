@@ -9,6 +9,14 @@ public class Course
     //IsDistance visa ifall man har i klassrum eller distans...
     public bool IsDistance { get; set; }
 
+    public bool IsCourseDateValid()
+    {
+        if (EndDate < StartDate)
+        {
+            return false;
+        }
+        return true;
+    }
     public override string ToString()
     {
         string courseType;
@@ -21,8 +29,13 @@ public class Course
         {
             courseType = "Klassrum";
         }
-
-
-        return $"Kursnummer: {CourseNr} Ämne: {CourseTitel}, Start: {StartDate}, Slut: {EndDate}, Typ: {courseType}";
+        return $"Kursnummer: {CourseNr}, Ämne: {CourseTitel}, Start: {StartDate}, Slut: {EndDate}, Längd: {LengthInDays} dagar, Typ: {courseType}";
+    }
+    public int LengthInDays
+    {
+        get
+        {
+            return (EndDate - StartDate).Days;
+        }
     }
 }

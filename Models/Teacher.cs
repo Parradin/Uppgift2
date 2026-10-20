@@ -22,7 +22,7 @@ public class Teacher : Person
             CourseTitles += course.CourseTitel;
             count++;
         }
-        return $"Förnamn: {FirstName} Efternamn: {LastName} Email: {Email} TelefonNr: {PhoneNr} Adress: {Address.StreetAddress} Stad: {Address.City} PostNr: {Address.PostalCode} Kunskapsområden: {KnowledgeArea} Ansvariga kurser: {CourseTitles}";
+        return $"Personnummer: {PersonalId}, Förnamn: {FirstName}, Efternamn: {LastName}, Email: {Email}, TelefonNr: {PhoneNr}, Adress: {Address.StreetAddress}, Stad: {Address.City}, PostNr: {Address.PostalCode}, Kunskapsområden: {KnowledgeArea}, Ansvariga kurser: {CourseTitles}";
     }
 
 }
