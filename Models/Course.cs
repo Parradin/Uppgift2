@@ -23,6 +23,6 @@ public class Course
         }
 
 
-        return $"Kursnummer: {CourseNr} Ämne: {CourseTitel}, Start: {StartDate.ToShortDateString()}, Slut: {EndDate.ToShortDateString()}, Typ: {courseType}";
+        return $"Kursnummer: {CourseNr} Ämne: {CourseTitel}, Start: {StartDate}, Slut: {EndDate}, Typ: {courseType}";
     }
 }
