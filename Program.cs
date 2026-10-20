@@ -14,6 +14,7 @@ class Program
         Student student = new Student
         {
             Address = address,
+            PersonalId = "1980-02-15",
             FirstName = "Steffan",
             LastName = "Parra",
             Email = "steffan.parra@gmail.com",
@@ -22,6 +23,7 @@ class Program
         Teachers teachers = new Teachers
         {
             Address = address,
+            PersonalId = "1998-05-27",
             FirstName = "Petter",
             LastName = "Averbo",
             Email = "petter.averbo@gmail.com",
@@ -44,15 +46,24 @@ class Program
             EndDate = new DateTime(2027, 05, 20),
             IsDistance = false
         };
+        //skapar en lista på alla kurserna
+        List<Course> courses = [];
+
+        courses.Add(course);
+        courses.Add(course1);
+
+
         teachers.Courses.Add(course);
         teachers.Courses.Add(course1);
+
+        foreach (Course courseItem in courses)
+        {
+            Console.WriteLine(courseItem);
+        }
 
         Console.WriteLine(student);
         Console.WriteLine(teachers);
         Console.WriteLine($"Antal kurser: {teachers.Courses.Count}");
-
-
-
     }
 
 }

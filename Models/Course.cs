@@ -8,4 +8,21 @@ public class Course
     public required DateTime EndDate { get; set; }
     //IsDistance visa ifall man har i klassrum eller distans...
     public bool IsDistance { get; set; }
+
+    public override string ToString()
+    {
+        string courseType;
+
+        if (IsDistance)
+        {
+            courseType = "Distans";
+        }
+        else
+        {
+            courseType = "Klassrum";
+        }
+
+
+        return $"Kursnummer: {CourseNr} Ämne: {CourseTitel}, Start: {StartDate.ToShortDateString()}, Slut: {EndDate.ToShortDateString()}, Typ: {courseType}";
+    }
 }
