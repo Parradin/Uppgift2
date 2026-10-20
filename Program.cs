@@ -20,7 +20,7 @@ class Program
             Email = "steffan.parra@gmail.com",
             PhoneNr = "0762855129"
         };
-        Teachers teachers = new Teachers
+        Teacher teacher = new Teacher
         {
             Address = address,
             PersonalId = "19980527-1234",
@@ -86,15 +86,15 @@ class Program
         AddAdministrator(administrators, administrator);
         ListAdministrators(administrators);
 
+        List<Teacher> teachers = [];
+        AddTeacher(teachers, teacher);
+        ListTeachers(teachers);
 
-        teachers.Courses.Add(course);
-        teachers.Courses.Add(course1);
 
+        teacher.Courses.Add(course);
+        teacher.Courses.Add(course1);
 
-        Console.WriteLine(student);
-        Console.WriteLine(teachers);
-        Console.WriteLine($"Antal kurser: {teachers.Courses.Count}");
-        Console.WriteLine(educationLeader);
+        Console.WriteLine($"Antal kurser: {teacher.Courses.Count}");
     }
 
     static void ListCourses(List<Course> courses)
@@ -146,6 +146,19 @@ class Program
         foreach (Administrator administratorItem in administrators)
         {
             Console.WriteLine(administratorItem);
+        }
+    }
+
+    static void AddTeacher(List<Teacher> teachers, Teacher teacher)
+    {
+        teachers.Add(teacher);
+    }
+
+    static void ListTeachers(List<Teacher> teachers)
+    {
+        foreach (Teacher teacherItem in teachers)
+        {
+            Console.WriteLine(teacherItem);
         }
     }
 }
